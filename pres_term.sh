@@ -297,10 +297,11 @@ drawSlide() {
     
 }
 
-#drawSlide $1 "$2" "$3"
-#exit 1
-
-# Try fun anim
+if [ -z $1]
+then
+	drawSlide $1 "$2" "$3"
+	exit 1
+fi
 
 clear
 

@@ -297,7 +297,7 @@ drawSlide() {
     
 }
 
-if [ -z $1]
+if [ -n "$1" ]
 then
 	drawSlide $1 "$2" "$3"
 	exit 1
